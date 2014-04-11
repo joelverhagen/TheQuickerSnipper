@@ -3,7 +3,7 @@ using System.IO;
 using System.Threading.Tasks;
 using System.Windows.Media.Imaging;
 
-namespace PhotoSnipper
+namespace Knapcode.TheQuickerSnipper.Views
 {
     public partial class MainWindow
     {
