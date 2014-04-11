@@ -1,0 +1,25 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:PhotoSnipper"
+    x:Class="PhotoSnipper.MainWindow"
+    Title="MainWindow" Height="600" Width="800">
+    <Grid Background="#FFD8D8D8">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150" />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" Grid.Row="0" Grid.RowSpan="2">
+            <StackPanel x:Name="SelectionStackPanel" />
+        </Grid>
+
+        <local:SelectionArea x:Name="SelectionArea" Grid.Row="0" Grid.ColumnSpan="2" Grid.Column="1" />
+
+    </Grid>
+</Window>
